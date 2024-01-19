@@ -11,6 +11,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -81,8 +82,8 @@ $lien=get_field('lien_google_maps', 161);
 <!-- Code pour fermer la popup -->
 
 <script>
-jQuery('.popup-close').click(function(){
-	jQuery(this).parent().parent().parent().hide();
+$('.popup-close').click(function(){
+	$(this).parent().parent().parent().hide();
 })
 </script>
 
