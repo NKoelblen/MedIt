@@ -92,11 +92,11 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', true);
-define('WP_DEBUG_DISPLAY', true);
+define('WP_DEBUG_DISPLAY', false);
 define('WP_DEBUG_LOG', true);
 $sapi_type = php_sapi_name();
 if ( $sapi_type == 'cli' ) {
-    define( 'WP_DEBUG', true );
+    define( 'WP_DEBUG', false );
     error_reporting(0);
     @ini_set('display_errors', 0);
 }
