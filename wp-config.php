@@ -96,7 +96,7 @@ define('WP_DEBUG_DISPLAY', true);
 define('WP_DEBUG_LOG', true);
 $sapi_type = php_sapi_name();
 if ( $sapi_type == 'cli' ) {
-    define( 'WP_DEBUG', false );
+    define( 'WP_DEBUG', true );
     error_reporting(0);
     @ini_set('display_errors', 0);
 }
